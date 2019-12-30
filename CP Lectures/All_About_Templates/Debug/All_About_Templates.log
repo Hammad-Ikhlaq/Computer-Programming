@@ -1,0 +1,5 @@
+﻿  Source.cpp
+c:\users\dell i7\desktop\all about templates\all_about_templates\source.cpp(53): error C2247: 'A::PrintInfoA' not accessible because 'B' uses 'private' to inherit from 'A'
+  c:\users\dell i7\desktop\all about templates\all_about_templates\source.cpp(19): note: see declaration of 'A::PrintInfoA'
+  c:\users\dell i7\desktop\all about templates\all_about_templates\source.cpp(25): note: see declaration of 'B'
+  c:\users\dell i7\desktop\all about templates\all_about_templates\source.cpp(5): note: see declaration of 'A'
