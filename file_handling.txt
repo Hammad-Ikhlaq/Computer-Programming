@@ -1,0 +1,68 @@
+// writing in file
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main () 
+{
+  ofstream fout("example.txt");	
+  if(fout.is_open())
+  {  			
+  	fout << "Writing this to a file.\n";
+  	fout.close();
+  }
+  else 
+	cout << "Unable to open file";
+  return 0;
+}
+
+
+// reading a text file using char*
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main () 
+{
+  char line[30];
+  ifstream fin ("example.txt");
+  if (fin.is_open())
+  {
+    while (fin.getline (line,30) )
+    {
+      cout << line << '\n';
+    }
+    fin.close();
+  }
+
+  else cout << "Unable to open file"; 
+
+  return 0;
+}
+
+
+
+
+// reading a text file using string
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+
+int main () 
+{
+  string line;
+  ifstream fin ("example.txt");
+  if (fin.is_open())
+  {
+    while (getline (fin,line) )
+    {
+      cout << line << '\n';
+    }
+    fin.close();
+  }
+
+  else cout << "Unable to open file"; 
+
+  return 0;
+}
